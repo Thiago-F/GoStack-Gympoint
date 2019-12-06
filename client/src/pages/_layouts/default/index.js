@@ -2,11 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Container } from './styles';
+import Header from '../../../components/Header';
 
 export default function Default({ children }) {
     return (
         <Container>
-            <h1>Layout</h1>
+            <Header />
             {children}
         </Container>
     );
