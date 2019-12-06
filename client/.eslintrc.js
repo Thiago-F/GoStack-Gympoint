@@ -27,17 +27,18 @@ module.exports = {
   ],
   rules: {
     'prettier/prettier' : 'error',
-      'react/jsx-filename-extension' : [
-          'warn' ,
-          {extensions : ['.jsx' , '.js']}
-      ],
-      'import/prefer-default-export' : 'off',
+    'react/jsx-filename-extension' : [
+        'warn' ,
+        {extensions : ['.jsx' , '.js']}
+    ],
+    'import/prefer-default-export' : 'off',
 
-      'react/state-in-constructor' : 'off',
-      'no-param-reassign' : 'off',
-      'no-console' : ["error" , {allow : ["tron"]}],
+    'react/state-in-constructor' : 'off',
+    'no-param-reassign' : 'off',
+    'no-console' : ['error' , {allow : ['tron']}],
 
-      'react-hooks/rules-of-hooks' : 'error',
-      'react-hooks/exhaustive-deps' : 'warn'
+    'react-hooks/rules-of-hooks' : 'error',
+    'react-hooks/exhaustive-deps' : 'warn',
+    'react/jsx-props-no-spreading': 'off'
   },
 };
