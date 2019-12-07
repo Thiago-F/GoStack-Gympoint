@@ -10,9 +10,10 @@ import {
     Button,
     Input,
     Box,
+    Text,
 } from './styles';
 
-const PageLayout = ({ title, button, icon, children }) => {
+const PageLayout = ({ title, button, icon, handle, children }) => {
     return (
         <Container>
             <Content>
@@ -21,9 +22,9 @@ const PageLayout = ({ title, button, icon, children }) => {
                     <ControlButton>
                         <Button>
                             {icon}
-                            {button}
+                            <Text>{button}</Text>
                         </Button>
-                        <Input placeholder="Buscar aluno" />
+                        <Input onChange={handle} placeholder="Buscar aluno" />
                     </ControlButton>
                 </Header>
                 <Box>{children}</Box>
@@ -38,5 +39,6 @@ PageLayout.propTypes = {
     title: PropTypes.string.isRequired,
     icon: PropTypes.element.isRequired,
     button: PropTypes.string.isRequired,
+    handle: PropTypes.func.isRequired,
     children: PropTypes.element.isRequired,
 };

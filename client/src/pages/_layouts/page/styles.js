@@ -24,7 +24,12 @@ export const Title = styled.h1`
     color: #444444;
 `;
 
-export const ControlButton = styled.div``;
+export const ControlButton = styled.div`
+    display: flex;
+`;
+export const Text = styled.div`
+    font-size: 14px;
+`;
 
 export const Button = styled.button`
     padding: 10px 15px;
@@ -32,6 +37,8 @@ export const Button = styled.button`
     color: #fff;
     border: 0;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
 `;
 
 export const Input = styled.input`
